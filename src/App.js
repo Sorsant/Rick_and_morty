@@ -2,6 +2,7 @@ import './App.css';
 import Cards from './components/Cards.jsx';
 import Nav from './components/Nav.jsx';
 import { useState } from 'react';
+
 const example = {
    id: 1,
    name: 'Rick Sanchez',
@@ -15,12 +16,12 @@ const example = {
    image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
 };
 function App() {
-   let characters = []
-   const onSearch=()=>{
-      characters.push(example)
-      console.log(characters);
+   const [character,setCharacters]= useState([])
 
+   const onSearch=()=>{
+      setCharacters([...characters,example])
    }
+
    return (
       <div className='App'>
          <Nav onSearch={onSearch}/>

@@ -1,6 +1,6 @@
 import SearchBar from './SearchBar';
 
-export default function Nav({onSearch}){
+ const Nav=(onSearch)=>{
 return(
     
   <div>
@@ -14,3 +14,4 @@ return(
     )
     
 }
+export default Nav;
