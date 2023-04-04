@@ -1,19 +1,25 @@
 import Card from './Card';
 
-export default function Cards(props) {
-   return <div>
-      {props.characters.map(personaje=>{
-         return(
-            <div>
-         <button  key={props.id} onClick={personaje.onClose}>X</button>
-         <h2 key={props.id}>{personaje.name}</h2>
-         <h2 key={props.id}>{personaje.status}</h2>
-         <h2 key={props.id}>{personaje.species}</h2>
-         <h2 key={props.id}>{personaje.gender}</h2>
-         <h2 key={props.id}>{personaje.origin.name}</h2>
-         <img  key={props.id} src={personaje.image} alt='' /> 
+export default function Cards({ characters }) {
+   return (
+      <div>
+         {
+            characters.map(({ id, name, status, species, gender, origin, image }) => {
+               return(
+                  <Card
+                     key={id}
+                     id={id}
+                     name={name}
+                     status={status}
+                     species={species}
+                     gender={gender}
+                     image={image}
+                     origin={origin.name}
+                     onClose={() => alert('Emulamos que se cierra la card')}
+                  />
+               )
+            })
+         }
       </div>
-         )
-      })}
-   </div>;
+   )
 }
