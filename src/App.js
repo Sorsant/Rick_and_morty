@@ -4,11 +4,11 @@ import { useLocation } from 'react-router-dom';
 import { Route,Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import Cards from './components/Cards.jsx';
-import Nav from './components/Nav';
-import About from './components/About';
-import Dealit from './components/Deatil';
-import Form from './components/Form';
+import Cards from './components/Cards/Cards';
+import Nav from './components/Nav/Nav';
+import About from './components/About/About';
+import Dealit from './components/Deatil/Deatil';
+import Form from './components/Form/Form';
 
 function App() {
    const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
@@ -24,7 +24,7 @@ function App() {
    const navigate = useNavigate();
    useEffect(() => {
       !access && navigate('/');
-   }, [access]);
+   }, [access,navigate]);
 
    function login(userData) {
       if (userData.password === PASSWORD && userData.email === EMAIL) {
@@ -66,5 +66,3 @@ function App() {
 }
 
 export default App;
-
-

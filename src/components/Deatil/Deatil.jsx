@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-
+import style from './Deatil.module.css'
 const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
 const API_KEY = '1e540d7d8907.41ce7c7ee6a5ca7ee228';
 
@@ -24,12 +24,14 @@ const Detail = () => {
 
 
     return(
-        <div>
-            <h2>{character?.name}</h2>
+        <div className={style.card}>
+           <div className={style.cardInfo}>
+           <h2>{character?.name}</h2>
             <h2>{character?.status}</h2>
             <h2>{character?.species}</h2>
             <h2>{character?.gender}</h2>
             <h2>{character?.origin?.name}</h2>
+            </div> 
             <img src={character?.image} alt={character?.name} />
         </div>
     )

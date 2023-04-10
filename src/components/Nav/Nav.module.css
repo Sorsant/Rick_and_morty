@@ -1,0 +1,32 @@
+.navegar {
+    background-color: #333;
+    height: 50px;
+    display: flex;
+
+}
+
+.derecha {
+    margin-right: 800px;
+}
+
+.botones {
+    margin-left: 10px;
+    justify-content: space-around;
+}
+
+.botones button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.botones button:hover {
+    background-color: #333;
+    color: #fff;
+}

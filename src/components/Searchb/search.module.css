@@ -1,0 +1,22 @@
+.inputButton {
+    display: flex;
+    align-items: center;
+}
+
+.inputButton input[type="text"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+}
+
+.inputButton button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}

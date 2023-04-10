@@ -1,0 +1,84 @@
+.fondo {
+    text-align: center;
+
+}
+
+.fondo img {
+    filter: drop-shadow(75px -7px 64px #000);
+
+}
+
+.cajita {
+
+    height: 100%;
+    width: 250px;
+    margin: auto;
+    background-color: white;
+    padding: 1rem;
+    border: 1px solid black;
+    opacity: 0.88;
+    box-shadow: 13px 13px 16px 9px #000;
+    border-radius: 36px;
+}
+
+.label {
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-shadow: 12px 5px 4px #000000;
+}
+
+.input {
+    background-color: #000;
+    color: black;
+    animation: cambio-color 2s infinite;
+}
+
+.span {
+    color: #000;
+
+}
+
+@keyframes cambio-color {
+    0% {
+        background-color: #4db64a
+    }
+
+    50% {
+        background-color: #d1d938;
+
+    }
+
+    100% {
+        background-color: #019244;
+
+    }
+}
+
+.miBoton {
+    margin-top: 10px;
+    background-color: darkgreen;
+    color: black;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 10px 20px;
+    animation: cambio-color1 6s ease-in-out infinite;
+}
+
+@keyframes cambio-color1 {
+
+    0%,
+    33% {
+        background-color: darkgreen;
+    }
+
+    34%,
+    66% {
+        background-color: lightgreen;
+    }
+
+    67%,
+    100% {
+        background-color: white;
+    }
+}
