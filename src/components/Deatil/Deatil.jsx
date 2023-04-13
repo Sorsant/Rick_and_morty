@@ -26,11 +26,11 @@ const Detail = () => {
     return(
         <div className={style.card}>
            <div className={style.cardInfo}>
-           <h2>{character?.name}</h2>
-            <h2>{character?.status}</h2>
-            <h2>{character?.species}</h2>
-            <h2>{character?.gender}</h2>
-            <h2>{character?.origin?.name}</h2>
+           <h2>Nombre: {character?.name}</h2>
+            <h2>Estado: {character?.status}</h2>
+            <h2>Especie: {character?.species}</h2>
+            <h2>Genero: {character?.gender}</h2>
+            <h2>Origen: {character?.origin?.name}</h2>
             </div> 
             <img src={character?.image} alt={character?.name} />
         </div>

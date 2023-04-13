@@ -13,7 +13,30 @@
 
 .botones {
     margin-left: 10px;
-    justify-content: space-around;
+    margin-right: 700px;
+}
+
+.logOut {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+.logOut:hover {
+    background-color: #ffffff;
+    color: #3c3c3c;
+    transition: all 0.3s ease-in-out;
 }
 
 .botones button {

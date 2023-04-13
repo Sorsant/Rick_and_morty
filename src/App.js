@@ -9,6 +9,7 @@ import Nav from './components/Nav/Nav';
 import About from './components/About/About';
 import Dealit from './components/Deatil/Deatil';
 import Form from './components/Form/Form';
+import Favorite from './components/Favorites/Favorites';
 
 function App() {
    const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
@@ -52,12 +53,13 @@ function App() {
    return (
      
       <div className='App'>
-      {location.pathname !== "/" ? <Nav onSearch={onSearch}/> : null}      
+      {location.pathname !== "/" ? <Nav setAccess={setAccess} onSearch={onSearch} /> : null}      
          <Routes>  
          <Route path='/' element={<Form login={login}/>} />       
          <Route path='/home' element={<Cards characters={characters} onClose={onClose}/>} />
          <Route path='/about' element={<About/>} />
          <Route path='/detail/:id'  element={<Dealit/>}/>
+         <Route path ='/favorite' element={<Favorite/>} />
        </Routes>
            </div>
       
