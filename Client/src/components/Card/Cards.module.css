@@ -1,0 +1,129 @@
+.contenedor {
+    position: relative;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    background-image: url('https://i.redd.it/x498howiltl71.gif');
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: saturate(0%);
+    transition: filter 0.5s ease-in-out;
+
+}
+
+.contenedor:hover {
+    filter: none;
+}
+
+h2 {
+    margin: 10px;
+}
+
+.text {
+    color: #000000;
+    text-shadow: -1px 8px 5px #FFFFFF;
+
+}
+
+.miImagen {
+    width: 250px;
+    height: 250px;
+    /* filter: saturate(0%);
+    transition: filter 0.5s ease-in-out; */
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 1px 15px 90px 0px #000;
+
+}
+
+/* .miImagen:hover {
+    filter: none;
+} */
+
+.botonx {
+    display: inline-block;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #d40707;
+    border: none;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+
+.botoncorazon {
+    position: absolute;
+    left: 0;
+    font-size: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.botoncorazon:active {
+    transform: scale(1.5);
+}
+
+.botonx:hover {
+    background-color: #020202;
+    color: #d40707;
+    transition: all 0.3s ease-in-out;
+}
+
+.botoncorazon {
+    animation: pulse 1s infinite;
+}
+
+.nombreDePersonaje {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.7rem;
+    text-decoration: none;
+    z-index: 9;
+    margin-top: 320px;
+    margin-left: 30px;
+    color: rgb(0, 0, 0);
+    background-color: white;
+    padding: 5px;
+    border-radius: 20%;
+    text-shadow: 7px 11px 11px #443E3E;
+    filter: drop-shadow(13px 23px 13px #000);
+}
+
+.nombreDePersonaje {
+    animation: pulse 1s infinite;
+}
+
+.nombreDePersonaje:hover {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
