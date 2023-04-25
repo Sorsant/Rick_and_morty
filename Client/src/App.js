@@ -1,8 +1,6 @@
 import './App.css';
 import { useState,useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import { Route,Routes } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Cards from './components/Cards/Cards';
 import Nav from './components/Nav/Nav';
@@ -12,25 +10,26 @@ import Form from './components/Form/Form';
 import Favorite from './components/Favorites/Favorites';
 
 function App() {
-   const location = useLocation();// toma la url 
-
-   const [characters, setCharacters] = useState([]);
-   const [access,setAccess]=useState(false);
-
-   const EMAIL = 'ejemplo@gmail.com';
-   const PASSWORD = '1Password';
-
+   const location = useLocation();
    const navigate = useNavigate();
-   useEffect(() => {
-      !access && navigate('/');
-   }, [access,navigate]);
+   const [characters, setCharacters] = useState([]);
+   const [access, setAccess] = useState(false);
 
-   function login(userData) {
-      if (userData.password === PASSWORD && userData.email === EMAIL) {
-         setAccess(true);
-         navigate('/home');
-      }
+   const login = (userData) => {
+      const { email, password } = userData;
+      const URL = 'http://localhost:3001/rickandmorty/login';
+      axios(URL + `?email=${email}&password=${password}`)
+      .then(({ data }) => {
+         const { access } = data;
+         setAccess(access);
+         access && navigate('/home');
+      });
    }
+
+   useEffect(() => {
+      !access && navigate('/')
+   }, [access])
+
    const onSearch = (id) => {
       axios(`http://localhost:3001/rickandmorty/character/${id}`)
       .then(response => response.data)
