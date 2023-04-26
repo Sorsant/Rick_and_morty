@@ -6,7 +6,6 @@
     justify-content: center;
     border: 1px solid #ccc;
     border-radius: 10px;
-    padding: 20px;
     width: 300px;
     background-image: url('https://i.redd.it/x498howiltl71.gif');
     padding: 20px;
@@ -27,12 +26,16 @@
 }
 
 h2 {
+
     margin: 10px;
 }
 
 .text {
-    color: #000000;
-    text-shadow: -1px 8px 5px #FFFFFF;
+    font-family: 'Tourney';
+    font-size: 24px;
+    color: black;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+
 
 }
 
@@ -92,19 +95,23 @@ h2 {
 }
 
 .nombreDePersonaje {
-    position: absolute;
+    text-align: center;
+    position: relative;
     font-weight: bold;
     font-size: 1.7rem;
     text-decoration: none;
     z-index: 9;
-    margin-top: 320px;
-    margin-left: 30px;
     color: rgb(0, 0, 0);
     background-color: white;
     padding: 5px;
     border-radius: 20%;
     text-shadow: 7px 11px 11px #443E3E;
     filter: drop-shadow(13px 23px 13px #000);
+}
+
+a {
+    text-decoration: none;
+
 }
 
 .nombreDePersonaje {

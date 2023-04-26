@@ -7,15 +7,18 @@
 html {
   font-size: 62.5%;
   font-family: 'Comic Neue', cursive;
+  font-family: 'Tourney', cursive;
+  font-family: 'Roboto Condensed', sans-serif;
   /* font-family: 'Roboto Condensed', sans-serif; */
 }
 
 body {
-  /* background-image: url(https://i.pinimg.com/originals/46/f3/2a/46f32a1b55bc383e558ca1c798b051fa.jpg); */
-  background-image: url(https://d1x7zurbps6occ.cloudfront.net/product/xlarge/759954-204009.jpg);
+  /* background-image: url(https://i1.wp.com/www.vozactual.com/wp-content/uploads/2020/06/RICK_upscaled_image_x4-1-scaled.jpg?resize=1280%2C640&ssl=1); */
   text-align: center;
   background-size: cover;
-  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
 }

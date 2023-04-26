@@ -23,6 +23,7 @@ const Detail = () => {
 
 
     return(
+        <div className={style.contenedor}>
         <div className={style.card}>
            <div className={style.cardInfo}>
            <h2>Nombre: {character?.name}</h2>
@@ -32,6 +33,8 @@ const Detail = () => {
             <h2>Origen: {character?.origin?.name}</h2>
             </div> 
             <img src={character?.image} alt={character?.name} />
+        </div>
+
         </div>
     )
 }

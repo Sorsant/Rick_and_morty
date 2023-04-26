@@ -1,3 +1,13 @@
+.contenedor {
+    background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rick-y-morty-1643633509.jpeg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+}
+
 .card {
     width: 60%;
     display: flex;
@@ -6,6 +16,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     background-image: url('https://i.redd.it/x498howiltl71.gif');
+    margin-top: 20px;
     margin: auto;
     background-position: center;
     background-repeat: no-repeat;

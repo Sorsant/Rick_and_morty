@@ -1,0 +1,8 @@
+.contenedor {
+    background-image: url(https://d1x7zurbps6occ.cloudfront.net/product/xlarge/759954-204009.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

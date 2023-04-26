@@ -6,6 +6,8 @@
 try {
     const {data}= await axios(`${URL}/${id}`);
     
+    if(!data.name)throw new Error(`ID: ${id} Error not found`);
+
     const character = {status:data.status,
                         name:data.name,
                         species:data.species,
@@ -13,13 +15,16 @@ try {
                         image:data.image,
                         gender:data.gender,
                         id:data.id};
+                    
+                        return res.json(character);
+                    
 
-    if(!character)throw new Error('hubo un error');
   
-    return res.json(character);
 }
 catch(error){
-    res.status(500).send(error.message)
+    return error.message.includes('ID')
+    ?res.status(404).send(error.message)
+    :res.status(500).send(error.message)
 }
 
 }

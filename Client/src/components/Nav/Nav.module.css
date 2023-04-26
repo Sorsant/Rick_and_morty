@@ -1,5 +1,5 @@
 .navegar {
-    background-color: #333;
+    background-color: transparent;
     height: 50px;
     display: flex;
     border-radius: 100px;
@@ -7,13 +7,17 @@
 
 }
 
-.derecha {
-    margin-right: 800px;
+
+.botonesAdd img {
+    width: 80px;
+    height: 40px;
+    margin-top: 10px;
 }
 
 .botones {
+    display: flex;
     margin-left: 10px;
-    margin-right: 700px;
+    margin-right: 580px;
 }
 
 .logOut {
@@ -40,11 +44,10 @@
 }
 
 .botones button {
-    background-color: #fff;
+    background-color: transparent;
     color: #333;
     border: none;
     border-radius: 5px;
-    padding: 8px 10px;
     font-size: 16px;
     margin-left: 10px;
     cursor: pointer;

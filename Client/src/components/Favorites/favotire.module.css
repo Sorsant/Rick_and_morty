@@ -1,0 +1,9 @@
+.fondo {
+    background-image: url(https://www.xtrafondos.com/wallpapers/resized/rick-y-morty-en-el-espacio-6046.jpg?s=large);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-attachment: fixed;
+}
