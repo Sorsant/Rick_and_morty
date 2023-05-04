@@ -31,7 +31,7 @@ const handleOnSubmit = (event) => {
 }
     return(
        <div className={style.fondo}>
-            <img src="https://previews.dropbox.com/p/thumb/AB2eaq0cSES4TUSP0AJ3VnDeq1Bb3UzwV2PYX40NW6l-YdR91GEBnh8YQ37-ZCPtOU5rpT0xcQpzSrQ7Gi9OX5v1Vcas1NO0iQHQ3ld8FgUg4aHFEgzJex8JfkyGZ8Xcj6DHinMT2lpyZ5zso-WGolXmjCcfyAF5oib9ey2ZkNyR7C11gFlnfOG4zMg7fI-e5Kuv8sPtbP6LbCz21DJyohbVeHoy_iP-94jAXxtGpEF6dIvyoK_wnqEMwvh0VbDsQAcLurMQvUAxlco5sVll1cToEwo23BuFpxbrBTC5-jeUTBWoSKbCSC2sBfdSiJtBnO15Vuy5SoedCaeMve6Qd_2WbI33dOatKrCnhcw363D19Sl9z2CNRtZA4WukHm4S6PU/p.png" alt="" />
+            <img src="https://previews.dropbox.com/p/thumb/AB5XIqU_Am6lfUHLGWdwfQkblqYlNhiGkKS4gO2GYS0jVQQzBa96CFn1xLgpYNrF46U4ybCSlyfVfVOMJrNuEAsLxgJVj2uJ_Tlz_M8My_YRGd-WaHrKNTHOL-oG9JLinSIgp4UwIC_BSlgX_bLBsqJNxq00UKr9H0TXzCJ-rYeuDrXiMly65SXxlzPkx3zlyJFjk5zRjAY4TEwGx1U9zaOlNd9hkaLhBzrfbUiXDOucj4zfaeYMD4V1S6jHGJrxhsVxUBXmkeeb_ajbNjLKvamrpK5U0U39U-anZQXOaax5bqAbb33p4d2Tmdv5T3UDuDzQiiG7lkosu-on9aEJZIQaK0TyE33OgAtsdHflk50lFpNO5fyHuAD3gKhhmLVF2kw/p.png" alt="" />
         <div className={style.cajita}>
         <form onSubmit={handleOnSubmit}>
             <br />

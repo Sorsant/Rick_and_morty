@@ -15,14 +15,14 @@ export default function SearchBar({ onSearch }) {
    return (
       <div className={style.inputButton}>
          <input type='search' onChange={handleChange} value={id} />
-         <button className={style.botonesAdd}  onClick={() =>{onSearch(id); setId('')}}> <img src="https://previews.dropbox.com/p/thumb/AB49I6ehUsSlkyBymcB8Bv1Q5fOMa53o88Bpd646A6NkyEAIamjjzCUDH85M7eBB1Tlbefzh2sSbRWT1ohqmQQA5aJE_mfkS30uVDR53TYwUtyxnFCt-3XURRGQHLtF2rRv82aPV3iZ8ra0RHLGr15OlxFhJQvGJpSbDNsSC8LTdN0S-gOIPwyCezSqsfUoa9BVVL4sV6G1SW-4i4S3odt64TkytM8wZ8QThqLL7lKf2J0tS-3tCX9WQnoVa6lQcxEenXq2wJu_0LeFwTHV2aO3RGcerPEmnlB9qzdXAs--kbz7a1g-ZfoAAuXFLWAbDw9D3p5PWg5P_5TCEl5FtfBpC3-xt9GD8efPB_7E0Dlf1we7Ui7yIwUV_arlfECMd_7c/p.png" alt="" /></button>
+         <button className={style.botonesAdd}  onClick={() =>{onSearch(id); setId('')}}> <img src="https://previews.dropbox.com/p/thumb/AB6mxlzPdiAiiYkcZ7wzDuRGGZNMegAzHqFV7fPzR-O68cuaYOe-f2mRE8FVAGKH-_oXfEgpvKIaKSFclVUOa6At-6xTah8L78dZdwsoNMaBUk6V8ysVlQNZpW4vAxTHdPgqHMRhqvoY7IY3f3hONY0-7IOScOIZnfU1fuyt2ShbKjtUgGUZrDr7qFWX8K3AhRgRkTgvjZF6w7RW-YHhFMFGq5j7FZTaMEjYKUpcluoBuCIjCrQvMdJHZo1wEAr9I-42IcPV_FztsOG4mLr0juVQIed3xqM2GDjw7zFNh4hiwfIgcz4TVNNeaFStq2oEZeOd8vAWzZV1WCu76qt4WINoYnjfPPRPWg_J_GfhJcrmR8wOdcmSakqIFSzGMmtIMto/p.png" alt="" /></button>
          <button 
           className={style.botonesAdd}
           onClick={() => {
             randomizer();
           }}
         >
-          <img src="https://previews.dropbox.com/p/thumb/AB5H75LbSWftIL2toEjzPkWWrzdZLkhFtUHCnBYSvivrlpBOJLEkPefEevKjGHZxYGHT7kAdCaFW9gRRq7PBvvJv4SoXIsskQD68vQ4Ge578iirpVK83eCATx4UJLDg6PFdrxdw-lDkl74mKCbFg3-Vc1iYkxdQZ6oHwlfqFg09pJQTuCq8jhGUVlVeMs0FyVZNiphuKPTiBxKLBdZAzybkkm1X3MMuMrYimsiOQVMqmZIhDOZukk_KXBEanuSuMmBvc3URAdO8L-XKS51ZQ3ohb_G-rW7fWUQ3Ucfe6ry40BN1hK7YopZ5dxb5tet43ObGAIdLR743eivG0uL70zVyf182ODP-OGJ3mopFiVz3RQwTgV05at3cRp7lGr3hLbf8/p.png" alt="" />
+          <img src="https://previews.dropbox.com/p/thumb/AB6vArCNJfSWsA5G8cE-tLtENPcPMLOli5yC1C2RTvQaQwISSbi2Ekqdvqz8zjO3RWRPl_o_aHexN8EuxL4Hw916RfEakEWZY4QVK-pKSdPXkbdD0SOcRzjac5_HF0dEMbJ9kclNGf_5CmO9-2H5LQr5ArL2-yTWxwmRLhP0RB3bawUsrdKWIZWUMXoxV-VdJkKwjDk0vX-uAZKEbC897Q8HRVdYUuz1rJ523cFmuCuWWKUqs4frv1OtVROZr2peRqf01V6wFqQy8iAxsvq5c5LGJ35wBUwQvL4iw4ocJmKZd7dBXDDbNNHT-FOxrqjMxP9FF_EtRgnTmxjHfMLHciyM_OlVTtvRrjwA20u-U_UVTWjeWuuubNrtDWTVP05iB9Y/p.png" alt="" />
         </button>
       </div>
    );
