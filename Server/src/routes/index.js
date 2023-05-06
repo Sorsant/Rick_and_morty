@@ -1,22 +1,12 @@
-const { login } = require('../controllers/login');
-const { getCharById } = require('../controllers/getCharById');
-const { postFav, deleteFav } = require('../controllers/ handleFavorites');
+const express = require("express");
+const router = express.Router();
 
-const router = require('express').Router();
+const characters = require("./characters");
+const favorites = require("./favorites");
+const login = require("./login");
 
-router.get('/character/:id', (req, res) => {
-    getCharById(req, res);
-});
-
-router.get('/login', login);
-
-router.post('/fav', (req, res) => {
-    postFav(req, res);
-});
-
-router.delete('/fav/:id', (req, res) => {
-    deleteFav(req, res);
-});
-
+router.use("/character", characters);
+router.use("/fav", favorites);
+router.use("/login", login);
 
 module.exports = router;
