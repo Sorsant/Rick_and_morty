@@ -44,6 +44,7 @@ const handleFilter=(evento)=>{
                             id={fav.id}
                             name={fav.name}
                             species={fav.species}
+                            status={fav.status}
                             gender={fav.gender}
                             image={fav.image}
                             onClose={fav.onClose}

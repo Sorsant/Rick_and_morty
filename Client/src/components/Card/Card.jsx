@@ -5,7 +5,7 @@ import { useState,useEffect } from "react";
 import {connect} from 'react-redux'  // esto es para el map dispatch
 import { useLocation } from 'react-router-dom';
 
-function Card({id,name,status,species,gender,origin,image,onClose , addFav,removeFav,myFavorites} ) {
+function Card({id,name,status,species,gender,origin,image,onClose ,addFav,removeFav,myFavorites} ) {
    const [isFav,setIsFav]= useState(false);
    const { pathname } = useLocation();
 
@@ -17,7 +17,7 @@ function Card({id,name,status,species,gender,origin,image,onClose , addFav,remov
       }
       else{
          setIsFav(true)
-         addFav({id, name, species, gender, image, onClose})   
+         addFav({id, name, origin, status, image, species, gender})   
       }
    }
    
